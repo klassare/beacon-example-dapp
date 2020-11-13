@@ -8,7 +8,7 @@
     "ng": "ng",
     "serve": "ionic serve --external",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href /beacon-demo/",
     "deploy": "ng deploy",
     "test": "ng test",
     "lint": "ng lint",
@@ -21,7 +21,7 @@
   },
   "private": true,
   "dependencies": {
-    "@airgap/beacon-sdk": "2.0.0-beta.9",
+    "@airgap/beacon-sdk": "../beacon-sdk",
     "@angular/common": "^9.1.2",
     "@angular/core": "^9.1.2",
     "@angular/forms": "^9.1.2",
