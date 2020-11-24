@@ -17,7 +17,7 @@ export const getTezblockLinkForAddress: (
     [NetworkType.MAINNET]: 'https://tezblock.io/account/',
     [NetworkType.CARTHAGENET]: 'https://carthagenet.tezblock.io/account/',
     [NetworkType.DELPHINET]: 'https://delphinet.tezblock.io/account/',
-    [NetworkType.CUSTOM]: 'https://carthagenet.tezblock.io/account/'
+    [NetworkType.CUSTOM]: 'https://delphinet.tezblock.io/account/'
   }
   const url: string = urls[accountInfo && accountInfo.network ? accountInfo.network.type : NetworkType.MAINNET]
 
@@ -32,7 +32,7 @@ export const getTezblockLinkForTxHash: (
     [NetworkType.MAINNET]: 'https://tezblock.io/transaction/',
     [NetworkType.CARTHAGENET]: 'https://carthagenet.tezblock.io/transaction/',
     [NetworkType.DELPHINET]: 'https://delphinet.tezblock.io/transaction/',
-    [NetworkType.CUSTOM]: 'https://carthagenet.tezblock.io/transaction/'
+    [NetworkType.CUSTOM]: 'https://delphinet.tezblock.io/transaction/'
   }
   const url: string = urls[accountInfo && accountInfo.network ? accountInfo.network.type : NetworkType.MAINNET]
 
