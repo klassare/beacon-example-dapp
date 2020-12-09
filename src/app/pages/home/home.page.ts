@@ -52,7 +52,7 @@ export class HomePage {
   public activeAccount$: Observable<AccountInfo>
   public activeAccount: AccountInfo | undefined
 
-  public selectedNetwork: string = 'mainnet'
+  public selectedNetwork: string = 'delphinet'
   public networkName: string | undefined
   public networkRpcUrl: string | undefined
 

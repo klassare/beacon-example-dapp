@@ -1,4 +1,4 @@
-import { AccountInfo, BeaconEvent, DAppClient, Transport, TransportType } from '@airgap/beacon-sdk'
+import { AccountInfo, BeaconEvent, DAppClient, NetworkType, Transport, TransportType } from '@airgap/beacon-sdk'
 import { Injectable } from '@angular/core'
 import { Observable, ReplaySubject } from 'rxjs'
 import { distinctUntilChanged } from 'rxjs/operators'
@@ -8,7 +8,8 @@ import { distinctUntilChanged } from 'rxjs/operators'
 })
 export class BeaconService {
   public client: DAppClient = new DAppClient({
-    name: 'Beacon Example Dapp'
+    name: 'Tezos.help Example Dapp',
+    preferredNetwork: NetworkType.DELPHINET
   })
 
   private readonly _connectionStatus$: ReplaySubject<string> = new ReplaySubject(1)
