@@ -10,7 +10,7 @@
     "ng": "ng",
     "serve": "ionic serve --external",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href /beacon-demo/",
     "deploy": "ng deploy",
     "test": "ng test",
     "lint": "ng lint",
