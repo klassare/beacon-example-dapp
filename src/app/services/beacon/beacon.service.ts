@@ -9,7 +9,7 @@ import { distinctUntilChanged } from 'rxjs/operators'
 export class BeaconService {
   public client: DAppClient = new DAppClient({
     name: 'Tezos.help Example Dapp',
-    preferredNetwork: NetworkType.DELPHINET
+    preferredNetwork: NetworkType.FLORENCENET
   })
 
   private readonly _connectionStatus$: ReplaySubject<string> = new ReplaySubject(1)

@@ -17,6 +17,8 @@ export const getTezblockLinkForAddress: (
     [NetworkType.MAINNET]: 'https://tezblock.io/account/',
     [NetworkType.DELPHINET]: 'https://delphinet.tezblock.io/account/',
     [NetworkType.EDONET]: 'https://edonet.tezblock.io/account/',
+    [NetworkType.FLORENCENET]: 'https://florencenet.tezblock.io/account/',
+    [NetworkType.GRANADANET]: 'https://granadanet.tezblock.io/account/',
     [NetworkType.CUSTOM]: 'https://delphinet.tezblock.io/account/'
   }
   const url: string = urls[accountInfo && accountInfo.network ? accountInfo.network.type : NetworkType.MAINNET]
@@ -32,6 +34,8 @@ export const getTezblockLinkForTxHash: (
     [NetworkType.MAINNET]: 'https://tezblock.io/transaction/',
     [NetworkType.DELPHINET]: 'https://delphinet.tezblock.io/transaction/',
     [NetworkType.EDONET]: 'https://edonet.tezblock.io/transaction/',
+    [NetworkType.FLORENCENET]: 'https://florencenet.tezblock.io/transaction/',
+    [NetworkType.GRANADANET]: 'https://granadanet.tezblock.io/transaction/',
     [NetworkType.CUSTOM]: 'https://delphinet.tezblock.io/transaction/'
   }
   const url: string = urls[accountInfo && accountInfo.network ? accountInfo.network.type : NetworkType.MAINNET]
@@ -52,7 +56,7 @@ export class HomePage {
   public activeAccount$: Observable<AccountInfo>
   public activeAccount: AccountInfo | undefined
 
-  public selectedNetwork: string = 'delphinet'
+  public selectedNetwork: string = 'florencenet'
   public networkName: string | undefined
   public networkRpcUrl: string | undefined
 
